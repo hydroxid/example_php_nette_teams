@@ -1,0 +1,21 @@
+{block title}
+	Týmy
+{/block}
+
+{block content}
+<div class="row">
+
+	<div class="col-xl-4">
+		<div class="card my-4">
+			<div class="card-body">
+				<h2 class="my-4">Přidat tým</h2>
+				{control teamForm}
+			</div>
+		</div>
+	</div>
+
+	<div class="col-xl-8">
+		{include ../Team/blockTable.latte, 'rows' => $rows}
+	</div>
+
+</div>

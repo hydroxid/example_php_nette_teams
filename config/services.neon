@@ -1,0 +1,14 @@
+search:
+	-
+		in: %appDir%
+		classes:
+			- *Factory
+			- *Facade
+
+
+services:
+	- App\Router\RouterFactory::createRouter
+
+	# repositories
+	- App\Repository\PersonsRepository
+	- App\Repository\TeamsRepository
